@@ -29,7 +29,7 @@ header .tagline {
 hr {
     border: none;
     height: 4px;
-    background-color: rgba(175, 37, 240, 0.719);
+    background-color: #4b0082;
     margin: 10px auto;
 }
 .profile-img {
@@ -77,32 +77,37 @@ footer {
 /* Bottom Buttons Styling */
 .bottom-buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     margin: 20px 0;
 }
 
-.bottom-buttons button {
+/* Style both buttons and links uniformly */
+.bottom-buttons button,
+.bottom-buttons a {
     background-color: #4b0082;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
+    display: inline-block;
 }
 
-.bottom-buttons button:hover {
+.bottom-buttons button:hover,
+.bottom-buttons a:hover {
     background-color: #6a0dad;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-.nav a.active {
-    color: #1de9df;                /* White text */
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
+
+/* Active link */
+.bottom-buttons a.active {
+    background-color: #6a0dad;
+    color: #1de9df;
+    font-weight: bold;
 }
