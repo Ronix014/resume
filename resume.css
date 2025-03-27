@@ -32,13 +32,14 @@ hr {
     background-color: #4b0082;
     margin: 10px auto;
 }
+
+/* Profile Image */
 .profile-img {
-    width: 180px;  /* Increase size */
+    width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: 20px; /* Optional: to space it from the text */
     transition: 0.3s;
 }
 
@@ -46,6 +47,7 @@ hr {
     transform: scale(1.05);
 }
 
+/* Sections */
 section {
     margin: 2rem auto;
     max-width: 800px;
@@ -72,14 +74,7 @@ li {
     margin-bottom: 0.5rem;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    font-size: 0.9rem;
-}
-/* Bottom Buttons Styling */
+/* Bottom Navigation Buttons */
 .bottom-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -88,8 +83,6 @@ footer {
     margin: 20px 0;
 }
 
-/* Style both buttons and links uniformly */
-.bottom-buttons button,
 .bottom-buttons a {
     background-color: #4b0082;
     color: white;
@@ -101,10 +94,8 @@ footer {
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
-    display: inline-block;
 }
 
-.bottom-buttons button:hover,
 .bottom-buttons a:hover {
     background-color: #6a0dad;
     transform: scale(1.05);
@@ -114,5 +105,43 @@ footer {
 .bottom-buttons a.active {
     background-color: #6a0dad;
     color: #1de9df;
+}
+
+/* Initially hide the button */
+#backToTop {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
     font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease, transform 0.2s ease, visibility 0.5s ease;
+}
+
+/* Hover Effect */
+#backToTop:hover {
+    background-color: #c584eb;
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #333; /* Dark Brown */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
 }
