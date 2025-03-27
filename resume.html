@@ -3,99 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resume of Your Full Name">
+    <meta name="description" content="Resume of Jan Aaron P. Amigo">
     <title>Resume - Amigo, Jan Aaron P.</title>
     <link rel="stylesheet" href="resume.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <div class="bottom-buttons">
-    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Go to Top</button>
-    <a href="https://ronix014.github.io/landing-page/landing%20page.html">Home</a>
-    <a href="https://ronix014.github.io/biography/biography.html">Biography</a>     
-    <a href="https://ronix014.github.io/skills/skills.html#top">Skills</a>
-    <a href="https://ronix014.github.io/resume/resume.html"class="active">Resume</a>    
-    <a href="https://ronix014.github.io/photo-gallery/photo%20gallery.html">Photo Gallery</a>
-    <a href="https://ronix014.github.io/beats/beats.html">Beats Compilation</a>
-    <a href="https://ronix014.github.io/tvshows/tvshows.html">My Favorite TV Shows</a>
-    <a href="https://ronix014.github.io/films/films.html#top">My Favorite Films</a>
-    <a href="https://ronix014.github.io/dream-places/dreamplaces.html"> My Dream places to visit</a>   
-    <a href="https://ronix014.github.io/bucket-list/bucketlist.html">My Bucket List</a>      
-</div>
+            <a href="https://ronix014.github.io/landing-page/landing%20page.html">Home</a>
+            <a href="https://ronix014.github.io/biography/biography.html">Biography</a>     
+            <a href="https://ronix014.github.io/skills/skills.html#top">Skills</a>
+            <a href="https://ronix014.github.io/resume/resume.html" class="active">Resume</a>    
+            <a href="https://ronix014.github.io/photo-gallery/photo%20gallery.html">Photo Gallery</a>
+            <a href="https://ronix014.github.io/beats/beats.html">Beats Compilation</a>
+            <a href="https://ronix014.github.io/tvshows/tvshows.html">My Favorite TV Shows</a>
+            <a href="https://ronix014.github.io/films/films.html#top">My Favorite Films</a>
+            <a href="https://ronix014.github.io/dream-places/dreamplaces.html">My Dream Places to Visit</a>   
+            <a href="https://ronix014.github.io/bucket-list/bucketlist.html">My Bucket List</a>      
+        </div>
         <hr>
         <h1>Amigo, Jan Aaron P.</h1>
         <a href="resumepic.jpg" target="_blank">
-        <img src="resumepic.jpg" alt="My Picture" class="profile-img">
+            <img src="resumepic.jpg" alt="My Picture" class="profile-img">
         </a>
-        <p class="tagline">Aspiring Network Engineer | Passionate About Hardware and Systems </p>
+        <p class="tagline">Aspiring Network Engineer | Passionate About Hardware and Systems</p>
         <hr>
     </header>
-    
+
     <section class="about-me">
         <h2>About Me</h2>
         <p>
-            Hello! I am Amigo, Jan Aaron P., a 23-year-old aspiring Network Engineer based in San Juan city. 
-            I am passionate about Hands-on works, and I thrive in Straight personality and silent work environment. 
-            My goal is to bring value to organizations by utilizing my skills in Programming and troubloshooting.
+            Hello! I am Amigo, Jan Aaron P., a 23-year-old aspiring Network Engineer based in San Juan City. 
+            I am passionate about hands-on work, and I thrive in a straight-to-the-point and silent work environment. 
+            My goal is to bring value to organizations by utilizing my skills in programming and troubleshooting.
         </p>
     </section>
-    
+
     <section class="technical-skills">
         <h2>Technical IT Skills</h2>
         <ul>
-            <li type="disc">Programming Languages: Python, Java, C#, HTML/CSS </li>
-            <li type="disc">Database Management: MySQL, Access</li>
-            <li type="disc">Other Tools: Git, Figma, Visual studio, Code pen</li>
+            <li>Programming Languages: Python, Java, C#, HTML/CSS</li>
+            <li>Database Management: MySQL, Access</li>
+            <li>Other Tools: Git, Figma, Visual Studio, CodePen</li>
         </ul>
     </section>
-    
-    <section class="work-experience">
-        <h2>Work Experience</h2>
-        <ul>
-            <li type="cicrle">Job Title at Company Name <br>Achievements/Responsibilities: none
-            </li>
-            <li type="cicrle">
-                none<br>
-                
-        </ul>
-    </section>
-    
+
     <section class="education">
         <h2>Educational Attainment</h2>
         <ol>
-            <li>
-                Degree in Information Technology - University of the East (Manila) (2023-current)
-            </li>
-            <li>
-                Senior High School - Ramon Magsaysay Cubao high school (cubao) (2019-2023)
-            </li>
-            <li>
-                Junior High School - Ramon Magsaysay Cubao high school (cubao) (2014-2018)
+            <li>BS Information Technology - University of the East (2023 - Present)</li>
+            <li>Senior High School - Ramon Magsaysay Cubao High School (2019 - 2023)</li>
+            <li>Junior High School - Ramon Magsaysay Cubao High School (2014 - 2018)</li>
         </ol>
     </section>
-    
-    <section class="skills-training">
-        <h2>Skills, Training, and Seminars Attended</h2>
-        <ul>
-            <li>Programming</li>
-            <li>Web Designing</li>
-            <li>Cyber Security Seminar</li>
-        </Ul>
-    </section>
-    
+
     <section class="hobbies">
-        <h2>Hobbies/Interests</h2>
+        <h2>Hobbies & Interests</h2>
         <ol>
             <li>Building Computers</li>
-            <li>Watching tech related videos</li>
+            <li>Watching Tech-Related Videos</li>
             <li>Cars and Modifications</li>
         </ol>
     </section>
-    
-    <footer>
-        <p>© 2025 Jan Aaron Amigo | All Rights Reserved</p>
-        <hr>
 
-    </footer>
+    <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let backToTopBtn = document.getElementById("backToTop");
+
+        // Initially hide the button
+        backToTopBtn.style.opacity = "0";
+        backToTopBtn.style.visibility = "hidden";
+        backToTopBtn.style.transition = "opacity 0.5s ease, visibility 0.5s ease";
+
+        window.addEventListener("scroll", function () {
+            // Check if user has scrolled to the bottom
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+                backToTopBtn.style.opacity = "1";
+                backToTopBtn.style.visibility = "visible";
+            } else {
+                backToTopBtn.style.opacity = "0";
+                backToTopBtn.style.visibility = "hidden";
+            }
+        });
+
+        // Smooth scroll to top
+        window.scrollToTop = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    });
+</script>
+
+        <footer class="footer">
+            <p>© 2025 Jan Aaron Amigo | All Rights Reserved</p>
+        </footer>
 </body>
 </html>
